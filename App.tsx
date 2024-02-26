@@ -1,4 +1,4 @@
-import { Groups } from '@/screens/groups'
+import { Groups } from '@/screens/Groups'
 import theme from '@/theme'
 import { ThemeProvider } from 'styled-components'
 import {
@@ -6,7 +6,7 @@ import {
   Roboto_400Regular,
   Roboto_700Bold
 } from '@expo-google-fonts/roboto'
-import { Loading } from '@/components/loading'
+import { Loading } from '@/components/Loading'
 import { StatusBar } from 'react-native'
 
 export default function App() {

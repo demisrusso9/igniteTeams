@@ -1,12 +1,11 @@
-import { Highlight } from '../highlight'
 import { Container, Logo, BackButton, BackIcon } from './styles'
 import logoImg from '@/assets/logo.png'
 
-interface GroupsProps {
+interface HeaderProps {
   showBackButton?: boolean
 }
 
-export function Header({ showBackButton }: GroupsProps) {
+export function Header({ showBackButton }: HeaderProps) {
   return (
     <Container>
       {showBackButton && (
