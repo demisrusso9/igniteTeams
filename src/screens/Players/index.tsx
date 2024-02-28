@@ -1,11 +1,11 @@
+import { useState } from 'react'
+import { FlatList } from 'react-native'
 import { Header } from '@/components/Header'
-import { Container, Form, HeaderList, NumberOfPlayers } from './styles'
 import { Highlight } from '@/components/Highlight'
 import { Input } from '@/components/Input'
 import { ButtonIcon } from '@/components/ButtonIcon'
 import { Filter } from '@/components/Filter'
-import { FlatList } from 'react-native'
-import { useState } from 'react'
+import { Container, Form, HeaderList, NumberOfPlayers } from './styles'
 
 export function Players() {
   const [team, setTeam] = useState('time b')

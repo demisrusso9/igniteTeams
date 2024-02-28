@@ -1,6 +1,6 @@
 import styled from 'styled-components/native'
 
-interface ButtonStyleProps {
+export interface ButtonStyleProps {
   variant: 'primary' | 'secondary';
 }
 
