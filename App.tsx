@@ -1,4 +1,5 @@
-import { Groups } from '@/screens/Groups'
+import { Players } from '@/screens/Players'
+import { NewGroup } from '@/screens/NewGroup'
 import theme from '@/theme'
 import { ThemeProvider } from 'styled-components'
 import {
@@ -23,7 +24,7 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   )
 }
