@@ -64,7 +64,6 @@ export function Players() {
       <Button
         title='Remover turma'
         variant='secondary'
-        style={{ marginBottom: 16 }}
       />
     </Container>
   )

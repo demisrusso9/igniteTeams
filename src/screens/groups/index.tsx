@@ -37,7 +37,6 @@ export function Groups() {
       <Button
         title='Cadastrar turma'
         variant='primary'
-        style={{ marginBottom: 16 }}
         onPress={handleNewGroup}
       />
     </Container>
