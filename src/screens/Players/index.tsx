@@ -8,16 +8,17 @@ import { ButtonIcon } from '@/components/ButtonIcon'
 import { Filter } from '@/components/Filter'
 import { PlayerCard } from '@/components/PlayerCard'
 import { EmptyList } from '@/components/EmptyList'
-
-import { Container, Form, HeaderList, NumberOfPlayers } from './styles'
 import { Button } from '@/components/Button'
+
+import { Layout } from '@/layout'
+import { Form, HeaderList, NumberOfPlayers } from './styles'
 
 export function Players() {
   const [team, setTeam] = useState('time b')
   const [players, setPlayers] = useState(['a'])
 
   return (
-    <Container>
+    <Layout>
       <Header showBackButton />
 
       <Highlight
@@ -65,6 +66,6 @@ export function Players() {
         title='Remover turma'
         variant='secondary'
       />
-    </Container>
+    </Layout>
   )
 }

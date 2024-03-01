@@ -6,8 +6,8 @@ import { Highlight } from '@/components/Highlight'
 import { GroupCard } from '@/components/GroupCard'
 import { EmptyList } from '@/components/EmptyList'
 import { Button } from '@/components/Button'
-import { Container } from './styles'
 import { getAllGroup } from '@/storage/group/getAllGroup'
+import { Layout } from '@/layout'
 
 export function Groups() {
   const [groups, setGroups] = useState<string[]>([])
@@ -34,7 +34,7 @@ export function Groups() {
   )
 
   return (
-    <Container>
+    <Layout>
       <Header />
 
       <Highlight title='Turmas' subtitle='Jogue com a sua turma' />
@@ -55,6 +55,6 @@ export function Groups() {
         variant='primary'
         onPress={handleNewGroup}
       />
-    </Container>
+    </Layout>
   )
 }

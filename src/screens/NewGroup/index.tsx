@@ -2,10 +2,11 @@ import { Header } from '@/components/Header'
 import { Button } from '@/components/Button'
 import { Highlight } from '@/components/Highlight'
 import { Input } from '@/components/Input'
-import { Container, Content, Icon } from './styles'
+import { Content, Icon } from './styles'
 import { useNavigation } from '@react-navigation/native'
 import { useState } from 'react'
 import { createGroup } from '@/storage/group/createGroup'
+import { Layout } from '@/layout'
 
 export function NewGroup() {
   const [group, setGroup] = useState('')
@@ -21,7 +22,7 @@ export function NewGroup() {
   }
 
   return (
-    <Container>
+    <Layout>
       <Header showBackButton />
 
       <Content>
@@ -40,6 +41,6 @@ export function NewGroup() {
 
         <Button title='Criar' variant='primary' onPress={handleNewGroup} />
       </Content>
-    </Container>
+    </Layout>
   )
 }
